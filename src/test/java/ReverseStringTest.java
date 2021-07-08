@@ -6,7 +6,7 @@ public class ReverseStringTest {
 
 	@Test
 	public void testReverseStringReturnsString() {
-		assertEquals("a is the one", new ReverseString().reverse("abcde"));
+		assertEquals(5, new ReverseString().reverse("abcde"));
 	}
 
 }
