@@ -18,18 +18,20 @@ public class ReverseString {
 				i++;
 			}
 			String answer = String.valueOf(charArr);
+			System.out.println(answer);
 			return answer;
 		} else {
-			return "charArr";
-		}
+			while (i <= str.length() / 2) {
+				charArr[i] = str.charAt(j);
+				charArr[j] = str.charAt(i);
+				j--;
+				i++;
 
-		/*
-		 * create a counter variable == 0 and bounded to length of string divided by 2
-		 * if string is even or length of string - 1 divided by 2 if odd.
-		 * 
-		 * once the counter reaches its upper bound, if the string was odd, add the
-		 * remaining character to its same position, else, leave be.
-		 */
+			}
+			String answer = String.valueOf(charArr);
+			System.out.println(answer);
+			return answer;
+		}
 
 	}
 
@@ -37,6 +39,10 @@ public class ReverseString {
 		String str = "123456";
 		ReverseString r = new ReverseString();
 		r.reverse(str);
+
+		String str2 = "12345";
+		ReverseString r2 = new ReverseString();
+		r2.reverse(str2);
 	}
 
 }
