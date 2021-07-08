@@ -6,12 +6,12 @@ public class ReverseStringTest {
 
 	@Test
 	public void testReverseStringReturnsString() {
-		assertEquals("e is the one", new ReverseString().reverse("abcde"));
+		assertEquals("odd", new ReverseString().reverse("abcde"));
 	}
 
 	@Test
 	public void ReverseStringReturnsLengthOfString() {
-		assertEquals("6 is the one", new ReverseString().reverse("123456"));
+		assertEquals("even", new ReverseString().reverse("123456"));
 	}
 
 }
