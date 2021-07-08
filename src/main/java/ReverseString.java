@@ -1,10 +1,11 @@
 public class ReverseString {
 
-	public int reverse(String str) {
+	public String reverse(String str) {
 		// create an array of length str.length()
 		char[] charArr = new char[str.length()];
 		// create an index var i
-		return charArr.length;
+		int i = 0;
+		return str.charAt(i) + " is the one";
 
 		/*
 		 * have an index variable j == length of string - 1, so I can use it as an
@@ -15,6 +16,12 @@ public class ReverseString {
 		 * remaining character to its same position, else, leave be.
 		 */
 
+	}
+
+	public static void main(String[] args) {
+		String str = "12345";
+		ReverseString r = new ReverseString();
+		r.reverse(str);
 	}
 
 }
