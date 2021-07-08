@@ -11,7 +11,7 @@ public class ReverseStringTest {
 
 	@Test
 	public void ReverseStringReturnsLengthOfString() {
-		assertEquals(6. new ReverseString().reverse("123456"));
+		assertEquals(6, new ReverseString().reverse("123456"));
 	}
 
 }
