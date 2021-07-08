@@ -5,7 +5,7 @@ public class ReverseString {
 		char[] charArr = new char[str.length()];
 		// create an index var i
 		int i = 0;
-		int j = str.length();
+		int j = str.length() - 1;
 		return j;
 
 		/*
