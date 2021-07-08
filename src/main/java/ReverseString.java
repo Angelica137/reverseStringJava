@@ -10,9 +10,10 @@ public class ReverseString {
 		int j = str.length() - 1;
 		// check if str.length() is odd
 		if (str.length() % 2 == 0) {
-			System.out.println("lol");
+			return "even";
+		} else {
+			return "odd";
 		}
-		return str.charAt(j) + " is the one";
 
 		/*
 		 * create a counter variable == 0 and bounded to length of string divided by 2
