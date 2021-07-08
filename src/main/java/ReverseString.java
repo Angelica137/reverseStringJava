@@ -1,7 +1,7 @@
 public class ReverseString {
 
-	public String reverse(String str) {
-		return "Hello, world!";
+	public int reverse(String str) {
+		return str.length();
 	}
 
 }
