@@ -5,13 +5,13 @@ import org.junit.Test;
 public class ReverseStringTest {
 
 	@Test
-	public void testReverseStringReturnsString() {
-		assertEquals("odd", new ReverseString().reverse("abcde"));
+	public void testReverseStringReturnsCorrectStringOddInput() {
+		assertEquals("edcba", new ReverseString().reverse("abcde"));
 	}
 
 	@Test
-	public void ReverseStringReturnsLengthOfString() {
-		assertEquals("even", new ReverseString().reverse("123456"));
+	public void testReverseStringReturnsCorrectStringEvenInput() {
+		assertEquals("654321", new ReverseString().reverse("123456"));
 	}
 
 }
