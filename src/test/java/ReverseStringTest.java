@@ -9,4 +9,9 @@ public class ReverseStringTest {
 		assertEquals(5, new ReverseString().reverse("abcde"));
 	}
 
+	@Test
+	public void ReverseStringReturnsLengthOfString() {
+		assertEquals(6. new ReverseString().reverse("123456"));
+	}
+
 }
