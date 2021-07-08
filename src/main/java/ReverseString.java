@@ -1,12 +1,12 @@
 public class ReverseString {
 
-	public int reverse(String str) {
+	public String reverse(String str) {
 		// create an array of length str.length()
 		char[] charArr = new char[str.length()];
 		// create an index var i
 		int i = 0;
 		int j = str.length() - 1;
-		return j;
+		return str.charAt(j) + " is the one";
 
 		/*
 		 * have an index variable j == length of string - 1, so I can use it as an
