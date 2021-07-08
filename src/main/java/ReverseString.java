@@ -10,9 +10,17 @@ public class ReverseString {
 		int j = str.length() - 1;
 		// check if str.length() is odd
 		if (str.length() % 2 == 0) {
-			return "even";
+			while (i < str.length() / 2) {
+				charArr[i] = str.charAt(j);
+				charArr[j] = str.charAt(i);
+
+				j--;
+				i++;
+			}
+			String answer = String.valueOf(charArr);
+			return answer;
 		} else {
-			return "odd";
+			return "charArr";
 		}
 
 		/*
@@ -26,7 +34,7 @@ public class ReverseString {
 	}
 
 	public static void main(String[] args) {
-		String str = "12345";
+		String str = "123456";
 		ReverseString r = new ReverseString();
 		r.reverse(str);
 	}
