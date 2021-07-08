@@ -1,7 +1,9 @@
 public class ReverseString {
 
 	public int reverse(String str) {
-		return str.length();
+		// create an array of length str.length()
+		char[] charArr = new char[str.length()];
+		return charArr.length;
 	}
 
 }
